@@ -15,18 +15,10 @@
 .App{
   height: 100%;
 }
-.pokemons {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 90%;
-  border: 2px solid green;
-  justify-content: center;
-}
 
-.pokemon-img-pokedex {
-  width: 80%;
-}
+/*------------------------------Input page---------------------*/
+
+
 
 .input-container{
   display: flex;
@@ -91,3 +83,5 @@ input {
   border-radius: 10%;
 
 }
+
+

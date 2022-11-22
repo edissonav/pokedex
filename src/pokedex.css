@@ -1,0 +1,222 @@
+
+.pokedex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-image: url('./assets/detective-pikachu.jpg');
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  
+  
+  
+  /*-----------------header--------------*/
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .pokedex-tittle {
+    margin-top: 30px;
+    color: aliceblue;
+  }
+  
+  .select-type {
+    width: 90%;
+    height: 30px;
+    border-radius:30px;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    background-color: aliceblue;
+    color: gray;
+  
+  }
+  
+  .select-type:hover {
+    cursor: pointer;
+  }
+  
+  .search-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-input {
+    border-radius: 30px;
+    text-align: center;
+    background-color: darkseagreen;
+    color: rgb(4, 99, 11);
+    font-size: 20px;
+  }
+  
+  .search-button {
+    border: none;
+    width: 20%;
+    height: 60px;
+    border-radius: 100px;
+    background-color: 	#222224;
+    color: aliceblue;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .search-button::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: -100px;
+    left: -20px;
+    border-radius: 100px 100px 0 0;
+    background-color: #ee1515;
+    position: absolute;
+  
+  
+  }
+  
+  .search-button:hover {
+    cursor: pointer;
+    z-index: 1;
+    background-color: aliceblue;
+    scale: 1.1;
+    transition: 1s;
+    color: aliceblue;
+  }
+  
+  .search-button:hover::before {
+    
+    top: -65px;
+    z-index: 0;
+  }
+  
+  
+  /*----------------- pokedex.---------*/
+  
+  .pokemons {
+    list-style: none;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 90%;
+    justify-content: center;
+    gap: 10px;
+    
+  }
+  
+  .pokemon-img-pokedex {
+    width: 40%;
+  }
+  
+  .pokemon-card {
+    height: 300px;
+    border: 1px solid black;
+    background-color: rgb(4, 149, 113);
+    border-radius: 10%;
+    
+    
+  }
+  
+  .card-container{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  /*---------------------pages-----------------*/
+  
+  .page-container {
+    display: flex;
+    width: 90%;
+    gap: 10px;
+    
+  }
+  
+  .page-button-container {
+    width: 100%;
+    
+  }
+  
+  .page-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: darkseagreen;
+    color: #222224;
+    position: relative;
+    overflow: hidden;
+    border: none;
+  }
+  
+  .page-button::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    top: -120px;
+    border-radius: 100px 100px 0 0;
+    background-color: #ee1515;
+    position: absolute;
+  
+  
+  }
+  
+  .page-button:hover::before {
+    top: -17px;
+    right: 0px;
+    left: 0;  
+  }
+  
+  .page-button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: aliceblue;
+  }
+  
+  .next-prev {
+    border: none;
+    width: 70px;
+    border-radius: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: darkolivegreen;
+    color: aliceblue;
+  }
+  
+  
+  .next-prev::before {
+    content: '';
+    width: 100px;
+    height: 40px;
+    top: -120px;
+    border-radius: 100px 100px 0 0;
+    background-color: #ee1515;
+    position: absolute; 
+  }
+  
+  .next-prev:hover::before {
+    top:0;
+    right: 1px;
+    left: -2px;
+  }
+  
+  .next-prev:hover {
+    background-color: aliceblue;
+    color: aliceblue;
+    scale: 1.2;
+  }
