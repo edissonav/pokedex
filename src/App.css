@@ -84,4 +84,60 @@ input {
 
 }
 
+/*--------------------pokemondetails-------------------------------*/
 
+video{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  opacity: 0.75;
+}
+.principal-container-details{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: x-large;
+  color :navy;
+  text-decoration: wavy;
+}
+.detail-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  
+}
+.logo-container{
+  width: 25%;
+  height: auto;
+}
+.logo-container>img{
+  width: 100%;
+  height: 100%;
+}
+.principal-info-container{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid orange;
+  margin: 2rem;
+  padding: 2rem;
+}
+.principal-info-container>img{
+  position: relative;
+  top: -40%;
+  left: 40%;
+  width: 400px;
+}
+.info-detail{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -10%;
+  letter-spacing: 2px;
+
+}
+.name-id{
+  text-transform: capitalize;
+}
