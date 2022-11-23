@@ -141,4 +141,5 @@ video{
 .name-id{
   text-transform: capitalize;
   text-decoration: solid;
+  font-size: x-large;
 }
