@@ -15,7 +15,7 @@ const PokemonDetail = () => {
     }, [id])
     console.log(pokemon);
     return (
-        
+
         <div className="principal-container-details">
             <video src="/src/assets/sun-moon-team-up.mp4" autoPlay loop ></video>
             <div className='detail-container'>
@@ -60,8 +60,12 @@ const PokemonDetail = () => {
                     <h2>stats</h2>
                     {
                         pokemon.stats?.map(stat => (
-                            <div ><label htmlFor="">{stat.stat.name}</label>
-                                <div>{stat.base_stat}</div></div>
+                            <div className='stat-info'>
+                                <label htmlFor="">{stat.stat.name}</label>
+                                <div>
+                                    {stat.base_stat}
+                                </div>
+                            </div>
 
                         ))
                     }
@@ -77,9 +81,9 @@ const PokemonDetail = () => {
                 }
 
             </div>
-            
+
         </div>
-        
+
     );
 };
 
