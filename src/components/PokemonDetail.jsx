@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import video from '../assets/sun-moon-team-up.mp4'
+import logo from '../assets/Pokemon-Logo.png'
 
 const PokemonDetail = () => {
 
@@ -17,10 +19,10 @@ const PokemonDetail = () => {
     return (
 
         <div className="principal-container-details">
-            <video src="/src/assets/sun-moon-team-up.mp4" autoPlay loop ></video>
+            {/* <video className='video' src={video} autoPlay loop ></video> */}
             <div className='detail-container'>
                 <div className='logo-container'>
-                    <img src="/src/assets/Pokemon-Logo.png" alt="" />
+                    <img src={logo} alt="" />
                 </div>
                 <div className='principal-info-container'>
                     <img src={pokemon.sprites?.other.dream_world.front_default} alt="" />
@@ -48,7 +50,7 @@ const PokemonDetail = () => {
 
                     </div>
                     <div className="abilities-container">
-                        <h2>Abilities</h2>
+                        <h2>Habilities</h2>
                         <div>
                             <h3>{pokemon.abilities?.[0].ability.name}</h3>
                             <h3>{pokemon.abilities?.[1].ability.name}</h3>
@@ -73,13 +75,14 @@ const PokemonDetail = () => {
                 </div>
             </div>
             <div className="movements-container">
-                <h2>movements</h2>
+                <h2>Movements</h2>
+                <div className='movements-detail'>
                 {
                     pokemon.moves?.map(move => (
                         <li >{move.move.name}</li>
                     ))
                 }
-
+                </div>
             </div>
 
         </div>
